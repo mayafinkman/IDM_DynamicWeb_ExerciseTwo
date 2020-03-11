@@ -1,1 +1,82 @@
+.SiteWrapper{
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 25px;
+}
 
+.Home{
+  max-width: 800px;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+.Home h1 {
+  text-align: center;
+}
+
+.WeatherInfo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.WeatherInfo_Image{
+  flex-basis: 50%;
+  text-align: center;
+  font-size: 120px;
+}
+
+.WeatherInfo_Data{
+  flex-basis: 100%;
+}
+
+.WeatherInfo_Data .CurrentTemperature .CurrentTemperatureTemp{
+  font-size: 120px;
+  line-height: 140px;
+  font-weight: bold;
+  margin:0;
+}
+.WeatherInfo_Data .CurrentTemperature .CurrentTemperatureLabel{
+  margin:0;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+  
+
+.OtherTemperatures p{
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.Header{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.CitiesNav{
+  display: flex;
+
+}
+
+.CitiesNav a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  padding: 5px 10px;
+  transition: border-bottom 200ms ease;
+}
+.CitiesNav a:hover{
+  border-bottom: 1px solid black;
+}
+.CitiesNav .active{
+  color: blue;
+}
+
+div{
+  
+}
