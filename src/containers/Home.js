@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useHistory } from "react-router-dom";
 import WeatherImage from "../components/WeatherImage";
 import Header from "../components/Header";
+import HeaderImage from "../components/HeaderImage";
 
 //API keys
 const defaultKey = "bf51228f98f258e444dcebb583558d21";
@@ -76,7 +77,8 @@ function Home() {
 
     return (
         <div className="Home" style={{ backgroundColor: `rgba(0,0,0,${cloudiness})` }}>
-            <h1>Weather in {city}</h1>
+            <HeaderImage city={city} />
+            <h1>Weather in {city}</h1>;
             <div className="WeatherInfo">
                 <div className="WeatherInfo_Image">
                     <WeatherImage weatherType={weatherType}/>
