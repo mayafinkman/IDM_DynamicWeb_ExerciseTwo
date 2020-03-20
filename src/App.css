@@ -1,3 +1,5 @@
+body{background-color:  aliceblue;}
+
 .SiteWrapper{
   max-width: 1080px;
   margin: 0 auto;
@@ -77,12 +79,9 @@
   color: blue;
 }
 
-div{
-  
-}
+.CityImage img{
+  margin: 10px;
+  max-width: 780px;
+  flex-basis: 50%;
 
-.CityImage{
-
-
-  
 }

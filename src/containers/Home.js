@@ -29,6 +29,7 @@ function Home() {
         let city = urlParams.get("city");
         if (city) {
             setCity(city);
+            //console.log(city);
         }
     }, [history]); //resets each time history changes
 
@@ -77,8 +78,10 @@ function Home() {
 
     return (
         <div className="Home" style={{ backgroundColor: `rgba(0,0,0,${cloudiness})` }}>
-            <HeaderImage city={city} />
-            <h1>Weather in {city}</h1>;
+            <div className="CityImage">
+                <HeaderImage city={city} /> 
+            </div>
+            <h1>Weather in {city}</h1>
             <div className="WeatherInfo">
                 <div className="WeatherInfo_Image">
                     <WeatherImage weatherType={weatherType}/>
