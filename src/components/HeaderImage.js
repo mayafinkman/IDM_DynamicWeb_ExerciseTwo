@@ -21,7 +21,7 @@ const CityImage = ({ city }) => {
 }
 
 function HeaderImage( { city } ) {
-    //console.log(city);
+    console.log(city);
     return (
         <div className="CityImage">
             <CityImage cityName={city}/>
