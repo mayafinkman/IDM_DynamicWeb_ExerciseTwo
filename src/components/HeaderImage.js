@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CityImage = ({ city }) => {
+const CityImage = ({ cityName }) => {
     
     //console.log(city);
-    switch (city) {
+    switch (cityName) {
         case 'tokyo':
             //console.log(city);
             return <img alt="tokyo" src="https://www.japan-guide.com/thumb/destination_tokyo.jpg" />;
